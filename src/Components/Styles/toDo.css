@@ -1,0 +1,18 @@
+/* div {
+    border: 2px solid red;
+} */
+
+body {
+    font-family: Playwrite NL;
+    background-color: bisque;
+}
+
+h3 {
+    padding-top: 10px;
+}
+
+button {
+ 
+    border-radius: 15px;
+    transition: background-color blue;
+}
