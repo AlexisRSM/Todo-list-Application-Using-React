@@ -60,7 +60,10 @@ const handleKeyPress = (event)=>{
             </div>
             <div className="row mt-4">
                 <ol>
-                    {tasks.map((task,index) =>
+                    {tasks.length === 0 ?(
+                        <li>No Tasks, add a task!</li>
+                    ) : (
+                    tasks.map((task,index) =>
                         <li key={index} className="task-item py-1">
                             <span className="text px-4 fs-5">{task}</span>
                                 <button
@@ -76,7 +79,7 @@ const handleKeyPress = (event)=>{
                                 onClick={()=>moveTaskDown(index)}
                                 >⬇️</button>
                         </li>
-                    )}
+                    ))}
                 </ol>
             </div>
         </>
